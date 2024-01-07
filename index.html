@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
+    <title>AI Inspirational Bible Verse Generator</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>AI Inspirational Bible Verse Generator</h1>
+        </header>
+
+        <main>
+            <div class="form-container">
+                <form id="verse-generator-form">
+                    <input type="text" placeholder="Enter a topic for an Inspirational Bible Verse." autofocus required
+                        autocomplete="off" class="instructions" id="user-input" />
+                    <input type="submit" class="submit-button" />
+                </form>
+                <div class="hint">NIV and worry</div>
+            </div>
+            <div class="verse hidden" id="verse"></div>
+        </main>
+
+        <footer>
+            This AI project was coded by
+            <a href="https://github.com/AngelaLynnSmith" target="_blank"> <strong>Angela Lynn Smith</strong></a>,
+            <a href="https://github.com/AngelaLynnSmith/spanish-poem-generator" target="_blank"> open-sourced on
+                GitHub</a>,
+            and
+            <a href="https://spanish-poem-generator-2024.netlify.app" target="_blank"> hosted on Netlify.</a>
+        </footer>
+        <script src="src/index.js"></script>
+    </div>
+</body>
+
+</html>
