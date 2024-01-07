@@ -13,8 +13,9 @@ function generateVerse(event) {
 	let userInput = document.querySelector("#user-input");
 	let apiKey = "cc8ad09bc07492ceeb391dfbot84812f";
 	let context =
-		"Create a unique 4-line romantic poem on user-specified topics. Display the poem in basic HTML format. Do not include a title. Always conclude with 'SheCodes AI' enclosed in a <strong> element, following user instructions.";
-	let prompt = `User instructions: Generate a Spanish poem about ${userInput}`;
+		"You are an AI designed to provide information from the Bible. I am requesting a relevant Bible verse based on user input. Always conclude with 'SheCodes AI' enclosed in a <strong> element.";
+	let prompt = `Please suggest a Bible verse related about ${userInput}. 
+    Use the ESV Version for the response. Provide both the verse and its context, if possible.`;
 	let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
 	let verseElement = document.querySelector("#verse");
@@ -26,3 +27,4 @@ function generateVerse(event) {
 
 let verseFormElement = document.querySelector("#verse-generator-form");
 verseFormElement.addEventListener("submit", generateVerse);
+
