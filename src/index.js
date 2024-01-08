@@ -19,7 +19,7 @@ function generateVerse(event) {
 
 	let verseElement = document.querySelector("#verse");
 	verseElement.classList.remove("hidden");
-	verseElement.innerHTML = `<div class="generating">⏳️ Generating an inspirational Bible verse about ${userInput.value} 📖</div>`;
+	verseElement.innerHTML = `<div class="generating">⏳️ Generating an inspirational Bible verse about ${userInput.value}.📖</div>`;
 
 	axios.get(apiUrl).then(displayVerse);
 }
